@@ -259,6 +259,8 @@ if __name__ == '__main__':
 
     for epoch in range(args.epochs):
         unet.train()
+        if hasattr(train_loader.sampler, "set_epoch"):
+            train_loader.sampler.set_epoch(epoch)
         for step, batch in enumerate(tqdm(train_loader)):
             with accelerator.accumulate(unet):
                 if args.offline:
