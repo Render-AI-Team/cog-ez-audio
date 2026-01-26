@@ -1,6 +1,7 @@
 <img src="arts/ezaudio.png">
 
 # EzAudio: Enhancing Text-to-Audio Generation with Efficient Diffusion Transformer
+
 [![Official Page](https://img.shields.io/badge/Official%20Page-EzAudio-blue?logo=Github&style=flat-square)](https://haidog-yaqub.github.io/EzAudio-Page/)
 [![arXiv](https://img.shields.io/badge/arXiv-2409.10819-brightgreen.svg?style=flat-square)](https://arxiv.org/abs/2409.10819)
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/spaces/OpenSound/EzAudio)
@@ -14,6 +15,7 @@
 <!-- We want to thank Hugging Face Space and Gradio for providing incredible demo platform. -->
 
 ## News
+
 <!-- - [SynSonic](https://github.com/JHU-LCAP/SynSonic ), leveraging EzAudio and ControlNet for sound event detection (SED) data augmentation, was accepted to WASPAA 2025. -->
 
 -  2025.05 EzAudio has been accepted for an oral presentation at Interspeech 2025.
@@ -82,9 +84,11 @@ sf.write(f"{prompt}_control.wav", audio, samplerate=sr)
 ## Training
 
 #### Autoencoder
+
 Refer to the VAE training section in our work [SoloAudio](https://github.com/WangHelin1997/SoloAudio)
 
 #### T2A Diffusion Model
+
 Prepare your data (see example in `src/dataset/meta_example.csv`), then run:
 
 ```bash
@@ -93,11 +97,12 @@ accelerate launch train.py
 ```
 
 ## Todo
+
 - [x] Release Gradio Demo along with checkpoints [EzAudio Space](https://huggingface.co/spaces/OpenSound/EzAudio)
 - [x] Release ControlNet Demo along with checkpoints [EzAudio ControlNet Space](https://huggingface.co/spaces/OpenSound/EzAudio-ControlNet)
 - [x] Release inference code
 - [x] Release training pipeline and dataset
-- [x] Improve API and support automatic ckpts downloading 
+- [x] Improve API and support automatic ckpts downloading
 
 ## Reference
 
@@ -113,4 +118,5 @@ If you find the code useful for your research, please consider citing:
 ```
 
 ## Acknowledgement
+
 Some codes are borrowed from or inspired by: [U-Vit](https://github.com/baofff/U-ViT), [Pixel-Art](https://github.com/PixArt-alpha/PixArt-alpha), [Huyuan-DiT](https://github.com/Tencent/HunyuanDiT), and [Stable Audio](https://github.com/Stability-AI/stable-audio-tools).

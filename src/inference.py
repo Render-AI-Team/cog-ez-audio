@@ -64,6 +64,7 @@ def inference(autoencoder, unet, gt, gt_mask,
     noise_scheduler.set_timesteps(ddim_steps)
 
     # init noise
+    audio_frames = int(audio_frames)
     noise = torch.randn((1, codec_dim, audio_frames), generator=generator, device=device)
     latents = noise
 

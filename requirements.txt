@@ -1,12 +1,16 @@
+cog
+torch==2.1.0
+numpy<2.0
 alias_free_torch
-diffusers
+diffusers==0.27.2
+huggingface-hub==0.20.2
 einops
 librosa
 pandas
 PyYAML
 soundfile
 tqdm
-transformers
+transformers<4.41.0
 vector_quantize_pytorch
 torchaudio
 julius
@@ -16,4 +20,8 @@ tensorboard
 randomname
 argbind
 sentencepiece
-accelerate
+accelerate<0.28.0
+scipy
+importlib-resources
+# Use audiocraft which provides the `encodec` module
+audiocraft
