@@ -15,3 +15,5 @@ build:
   python_requirements: requirements.txt
 
 predict: predict.py:Predictor
+
+train: src/TrainerCog.py:Trainer

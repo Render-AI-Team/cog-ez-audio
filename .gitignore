@@ -164,3 +164,9 @@ cython_debug/
 #cog
 .cog
 .DS_Store
+
+
+# Training
+dataset.zip
+my_dataset.csv
+extracted_mp3s/*
